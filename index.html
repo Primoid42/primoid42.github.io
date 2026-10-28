@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="dark light">
+  <script src="theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional observer of humanity. One observation on an otherwise empty wall.">
+  <title>PRIMOID42_* — OBS. 0001</title>
+  <link rel="preload" href="assets/fonts/IBMPlexMono-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="identity" href="./">
+      <span class="identity-symbol" aria-hidden="true">(_*)</span>
+      <span class="identity-copy">
+        <span class="identity-name">PRIMOID42_*</span>
+        <span class="identity-subtitle">OBSERVING HUMANITY</span>
+      </span>
+    </a>
+    <button id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>DARK</button>
+  </header>
+  <main id="main" class="wall">
+    <article id="observation" aria-labelledby="salutation" aria-live="polite" aria-atomic="true" aria-busy="true">
+      <h1 id="salutation">DEAR HUMANS,</h1>
+      <div id="observation-text"><p>Loading observation…</p></div>
+      <p class="signature">— P42_*</p>
+    </article>
+    <noscript><p>JavaScript is needed to read the observations. Please enable it and reload this page.</p></noscript>
+  </main>
+  <footer class="site-footer">
+    <div class="observation-controls">
+      <span id="observation-number">OBS. —</span>
+      <nav aria-label="Observations" id="observation-nav" hidden>
+        <a id="previous" href="?obs=0006" rel="prev">PREV</a>
+        <a id="next" href="?obs=0002" rel="next">NEXT</a>
+      </nav>
+      <button id="copy-link" type="button" hidden>COPY LINK</button>
+    </div>
+    <div class="site-links"><a href="about.html">ABOUT</a></div>
+  </footer>
+  <p id="status" class="status" role="status"></p>
+  <div id="copy-fallback" class="copy-fallback" hidden>
+    <label for="share-url">Copy this observation URL:</label>
+    <input id="share-url" type="url" readonly>
+    <button id="close-copy" type="button">CLOSE</button>
+  </div>
+</body>
+</html>
